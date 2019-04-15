@@ -1,0 +1,7 @@
+<!-- PROPERTY BINDING: to output data in component eg [value] = "newPostVal" -->
+<textarea rows="6" [value]="newPost" #newPostTextArea></textarea>
+<hr>
+<!-- EVENT BINDING angular feature allow to listen event in declaritive way - instead of using js use angular events eg (click) -->
+<button (click)="onAddPost(newPostTextArea)" >Save as</button>
+<!-- STRING MANIPULATION: For dynammic content in html we use it i.e: {{ title }} -->
+<p> {{ newPost }} </p>
